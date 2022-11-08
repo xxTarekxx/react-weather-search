@@ -6,7 +6,7 @@ import Search from './components/search/search';
 
 function App() {
   const [currentWeather, setCurrentWeather] = useState(null);
-  const [forecase, setForecast] = useState(null);
+  const [forecast, setForecast] = useState(null);
 
   const handleOnSearchChange = (searchData) => {
     const [lat, lon] = searchData.value.split(" ");
@@ -24,7 +24,9 @@ function App() {
         setCurrentWeather({ city: searchData.label, ...weatherResponse });
         setForecast({ city: searchData.label, ...forecastResponse });
       })
-
+      .catch((err) => console.log(err));
+    console.log(currentWeather)
+    console.log(forecast)
   }
   return (
     <div className="container">
