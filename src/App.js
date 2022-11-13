@@ -1,21 +1,25 @@
-import { useState } from 'react';
-import './App.css';
-import { WEATHER_API_KEY, WEATHER_API_URL } from './citiesApi';
-import CurrentWeather from './components/current-weather/current-weather';
-import Search from './components/search/search';
+import { useState } from "react";
+import "./App.css";
+import { WEATHER_API_KEY, WEATHER_API_URL } from "./citiesApi";
+import CurrentWeather from "./components/current-weather/current-weather";
+import Forecast from "./components/forecast/forecast";
+import Search from "./components/search/search";
 
 function App() {
-  const [currentWeather, setCurrentWeather] = useState(null);
-  const [forecast, setForecast] = useState(null);
+  const [currentWeather, setCurrentWeather] = useState("");
+  const [forecast, setForecast] = useState("");
 
   const handleOnSearchChange = (searchData) => {
     const [lat, lon] = searchData.value.split(" ");
 
-    const currentWeatherFetch = fetch(`${WEATHER_API_URL}/weather?lat=${lat}&lon=${lon}&&appid=${WEATHER_API_KEY}`);
-    const foreCastFetch = fetch(`${WEATHER_API_URL}/forecast?lat=${lat}&lon=${lon}&appid=${WEATHER_API_KEY}`);
+    const currentWeatherFetch = fetch(
+      `${WEATHER_API_URL}/weather?lat=${lat}&lon=${lon}&&appid=${WEATHER_API_KEY}&units=imperial`,
+    );
+    const foreCastFetch = fetch(
+      `${WEATHER_API_URL}/forecast?lat=${lat}&lon=${lon}&appid=${WEATHER_API_KEY}&units=imperial`,
+    );
 
     console.log(searchData);
-
     Promise.all([currentWeatherFetch, foreCastFetch])
       .then(async (response) => {
         const weatherResponse = await response[0].json();
@@ -25,13 +29,14 @@ function App() {
         setForecast({ city: searchData.label, ...forecastResponse });
       })
       .catch((err) => console.log(err));
-    console.log(currentWeather)
-    console.log(forecast)
-  }
+  };
+  console.log(currentWeather);
+  console.log(forecast);
   return (
-    <div className="container">
+    <div className='container'>
       <Search onSearchChange={handleOnSearchChange} />
-      <CurrentWeather />
+      {currentWeather && <CurrentWeather data={currentWeather} />}
+      {forecast && <Forecast data={forecast} />}
     </div>
   );
 }
