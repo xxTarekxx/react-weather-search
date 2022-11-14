@@ -1,11 +1,12 @@
 # **Search Cities Weather App**
 
-![Search Cities Weather App](![sc](https://user-images.githubusercontent.com/52683281/201572756-40c00b46-64b0-4528-bb46-35d7bd881838.jpg)
+![Search Cities Weather App]![sc](https://user-images.githubusercontent.com/52683281/201574420-85dbd281-7619-4474-96b2-e5488fefbe62.jpg)
+
 ## Overview
 
 This app pulls data from [OpenWeather](https://openweathermap.org/api) and [GeoDB](https://rapidapi.com/wirefreethought/api/geodb-cities/)
 
-**Deployed LINK**: [Search Cities Weather App](https://master.d34vskmyyyv13o.amplifyapp.com/)
+**Deployed LINK**: [Search Cities Weather App](https://master.d1il30b5jy67t3.amplifyapp.com/)
 
 ## Features
 
