@@ -1,9 +1,9 @@
 .weather {
 	width: 300px;
-	border-radius: 6px;
-	box-shadow: 10px -2px 20px 2px rgb(0 0 0 /30%);
+	border-radius: 30%;
+	box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.247);
 	color: #fff;
-	background-color: #333;
+	background-color: rgba(25, 78, 158, 0);
 	margin: 20px auto 0 auto;
 	padding: 0 20px 20px 20px;
 }
