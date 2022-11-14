@@ -18,8 +18,6 @@ function App() {
     const foreCastFetch = fetch(
       `${WEATHER_API_URL}/forecast?lat=${lat}&lon=${lon}&appid=${WEATHER_API_KEY}&units=imperial`,
     );
-
-    console.log(searchData);
     Promise.all([currentWeatherFetch, foreCastFetch])
       .then(async (response) => {
         const weatherResponse = await response[0].json();
@@ -30,8 +28,7 @@ function App() {
       })
       .catch((err) => console.log(err));
   };
-  console.log(currentWeather);
-  console.log(forecast);
+
   return (
     <div className='container'>
       <Search onSearchChange={handleOnSearchChange} />
