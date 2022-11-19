@@ -4,7 +4,7 @@ Search Cities Weather App Screen Shot![sc](https://user-images.githubusercontent
 
 This app pulls data from [OpenWeather](https://openweathermap.org/api) and [GeoDB](https://rapidapi.com/wirefreethought/api/geodb-cities/)
 
-**Deployed LINK**: [Search Cities Weather App](https://master.d1il30b5jy67t3.amplifyapp.com/)
+**Deployed LINK**: [Search Cities Weather App](https://master.d3pzyltjs0n18u.amplifyapp.com/)
 
 ## Features
 
