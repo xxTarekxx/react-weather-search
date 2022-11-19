@@ -1,4 +1,50 @@
 .container {
-  max-width: 1080px;
-  margin: 20px auto;
+	display: block;
+	max-width: 1080px;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+	.container {
+		margin: 10px;
+		display: block;
+	}
+}
+
+/* iPhone */
+@media (min-width: 320px) and (max-width: 480px) {
+	.container {
+		margin: 10px;
+		display: block;
+	}
+}
+
+/* iPhone 5 */
+@media (min-width: 320px) and (max-width: 568px) {
+	.container {
+		margin: 5%;
+		display: block;
+	}
+}
+
+/* Tablet */
+@media (min-width: 600px) and (max-width: 800px) {
+	.container {
+		margin: 5%;
+		display: block;
+	}
+}
+
+/* iPad 2, 3, mini */
+@media (min-width: 768px) and (max-width: 1024px) {
+	.container {
+		margin: 5%;
+		display: block;
+	}
+}
+
+@media (min-width: 1025px) {
+	.container {
+		flex-direction: row-reverse;
+		padding: 2rem;
+	}
 }
