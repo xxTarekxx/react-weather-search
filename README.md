@@ -1,5 +1,5 @@
 Search Cities Weather App Screen Shot![sc](https://user-images.githubusercontent.com/52683281/201574420-85dbd281-7619-4474-96b2-e5488fefbe62.jpg)
-Mobile Screenshot![Sc](https://user-images.githubusercontent.com/52683281/202832428-1eab5e39-4811-4aab-a841-02984f34f2ec.jpg)
+![Sc](https://user-images.githubusercontent.com/52683281/202832428-1eab5e39-4811-4aab-a841-02984f34f2ec.jpg)
 
 
 ## Overview
