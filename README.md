@@ -20,7 +20,6 @@ This app pulls data from [OpenWeather](https://openweathermap.org/api) and [GeoD
   - Clouds Condition
   - Wind Speed
   - Feels Like
-  - date & time
 
 - Location and temperature data depend on geolocation.
 
